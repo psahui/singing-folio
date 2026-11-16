@@ -1,0 +1,381 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Singing Folio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a specimen cabinet. Plates sit as paper objects on a quiet ground; one plate opens into a two-page spread. */
+:root {
+  --bg: #e7ebe5;        /* lichen grey */
+  --surface: #f4f6f2;
+  --ink: #1d2421;
+  --muted: #5a665f;
+  --rule: #c9d0c8;
+  --accent: #2b6a58;    /* eucalypt */
+  --gold: #a87b1f;      /* gilt edge, used for the sound */
+  --paper-shadow: 0 1px 2px rgba(29,36,33,.12), 0 8px 24px rgba(29,36,33,.10);
+  --land: #d3d9d1;
+  --dots: #2b6a58;
+  --display: "IM Fell English", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #111816; --surface: #18211e; --ink: #e5e9e2; --muted: #93a198; --rule: #2a3632;
+  --accent: #7cc3ac; --gold: #d8b35d; --paper-shadow: 0 1px 2px rgba(0,0,0,.5), 0 10px 30px rgba(0,0,0,.45);
+  --land: #24302c; --dots: #7cc3ac; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #111816; --surface: #18211e; --ink: #e5e9e2; --muted: #93a198; --rule: #2a3632;
+  --accent: #7cc3ac; --gold: #d8b35d; --paper-shadow: 0 1px 2px rgba(0,0,0,.5), 0 10px 30px rgba(0,0,0,.45);
+  --land: #24302c; --dots: #7cc3ac; color-scheme: dark }
+
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--ink); font: 16px/1.55 var(--body); }
+.wrap { max-width: 1180px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+a { color: var(--accent) }
+button { font: inherit; color: inherit }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px }
+
+/* masthead */
+header.mast { padding-block: 40px 8px }
+.eyebrow { font: 500 12px/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted) }
+h1 { font: 400 clamp(44px, 8vw, 92px)/.95 var(--display); margin: 10px 0 14px; letter-spacing: -.01em; text-wrap: balance }
+h1 em { font-style: italic; color: var(--accent) }
+.lede { max-width: 58ch; color: var(--muted); font-size: 17px; margin: 0 }
+nav.tabs { display: flex; gap: 4px; margin-top: 28px; border-bottom: 1px solid var(--rule) }
+nav.tabs a { text-decoration: none; color: var(--muted); padding: 10px 14px; border-bottom: 2px solid transparent; margin-bottom: -1px; font-weight: 500 }
+nav.tabs a[aria-current="page"] { color: var(--ink); border-color: var(--accent) }
+
+/* folio grid */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(168px, 1fr)); gap: 28px 22px; padding-block: 32px 48px }
+.tile { display: grid; gap: 10px; text-decoration: none; color: inherit; cursor: pointer; background: none; border: 0; padding: 0; text-align: left }
+.tile .paper { aspect-ratio: 1000 / 1450; max-width: 100%; background: #f1ecdf; box-shadow: var(--paper-shadow); overflow: hidden; transition: transform .25s ease, box-shadow .25s ease }
+.tile img { width: 100%; height: 100%; object-fit: cover; display: block }
+.tile:hover .paper, .tile:focus-visible .paper { transform: translateY(-3px) }
+.tile .no { font: 500 11px/1 var(--mono); color: var(--muted); letter-spacing: .06em }
+.tile .nm { font-weight: 600; font-size: 15px; line-height: 1.25 }
+.tile .gd { font: italic 15px/1.2 var(--display); color: var(--muted) }
+.tile .mute { font: 11px var(--mono); color: var(--muted) }
+
+/* spread */
+.spread { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; padding-block: 28px 56px; align-items: start }
+.spread .plate { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px); }
+.spread .plate .paper { background: #f1ecdf; box-shadow: var(--paper-shadow), 0 0 calc(var(--amp, 0) * 60px) calc(var(--amp, 0) * 10px) color-mix(in srgb, var(--gold) 55%, transparent); transition: box-shadow .08s linear; max-width: 100% }
+.spread .plate img { display: block; width: 100%; height: auto }
+.legend { text-align: center; font: italic 17px/1.35 var(--display); color: var(--muted); margin-top: 14px }
+.legend b { font-style: normal; font-weight: 400; letter-spacing: .04em; text-transform: uppercase; font-size: 13px; display: block; color: var(--ink) }
+.page { min-width: 0; display: grid; gap: 26px }
+.crumbs { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap }
+.crumbs a { font: 500 13px var(--body); text-decoration: none }
+.pager { display: flex; gap: 6px }
+.pager button { background: var(--surface); border: 1px solid var(--rule); border-radius: 999px; width: 38px; height: 38px; cursor: pointer; font-size: 17px }
+.pager button:hover { border-color: var(--accent) }
+.page h2 { font: 400 clamp(36px, 5vw, 56px)/1 var(--display); margin: 6px 0 4px; text-wrap: balance }
+.latin { font: italic 21px var(--display); color: var(--muted) }
+.taxo { font: 12px var(--mono); color: var(--muted); letter-spacing: .03em; margin-top: 8px }
+
+.voice { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 18px; display: grid; gap: 14px }
+.voice-head { display: flex; gap: 14px; align-items: center }
+.play { width: 56px; height: 56px; border-radius: 50%; border: 0; background: var(--accent); color: var(--bg); cursor: pointer; display: grid; place-items: center; flex: none }
+.play svg { width: 22px; height: 22px; fill: currentColor }
+.play[disabled] { background: var(--rule); cursor: default }
+.voice-title { font-weight: 600 }
+.voice-sub { color: var(--muted); font-size: 14px }
+canvas.spec { width: 100%; height: 150px; display: block; background: var(--bg); border-radius: 4px }
+.axis { display: flex; justify-content: space-between; font: 10px var(--mono); color: var(--muted); margin-top: -8px }
+.credit { font: 12px/1.6 var(--mono); color: var(--muted); overflow-wrap: anywhere }
+
+.mapbox h3, .note h3 { font: 500 12px var(--mono); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 10px }
+.map { position: relative; aspect-ratio: 2 / 1; max-width: 100%; border-radius: 4px; overflow: hidden; background: var(--surface); border: 1px solid var(--rule) }
+.map .land, .map .dots { position: absolute; inset: 0; -webkit-mask-size: var(--msize, 100% 100%); mask-size: var(--msize, 100% 100%); -webkit-mask-position: var(--mpos, 0 0); mask-position: var(--mpos, 0 0); -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat }
+.map .land { background: var(--land); -webkit-mask-image: url(assets/maps/land.png); mask-image: url(assets/maps/land.png) }
+.map .dots { background: var(--dots) }
+.mapcap { font: 12px var(--mono); color: var(--muted); margin-top: 8px }
+.note p { margin: 0; color: var(--muted); max-width: 60ch }
+
+/* odd bird out */
+.game { padding-block: 32px 56px; display: grid; gap: 22px }
+.game-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap }
+.game-head h2 { font: 400 clamp(30px, 4.4vw, 46px)/1.05 var(--display); margin: 0; max-width: 24ch; text-wrap: balance }
+.score { font: 500 13px var(--mono); color: var(--muted); white-space: nowrap }
+.trio { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px }
+.pick { background: none; border: 0; padding: 0; text-align: left; cursor: pointer; display: grid; gap: 10px }
+.pick .paper { aspect-ratio: 1000 / 1450; max-width: 100%; background: #f1ecdf; box-shadow: var(--paper-shadow); overflow: hidden; outline: 3px solid transparent; outline-offset: 4px; transition: outline-color .2s, opacity .3s }
+.pick img { width: 100%; height: 100%; object-fit: cover; display: block }
+.pick .nm { font-weight: 600 }
+.pick .tx { font: 12px var(--mono); color: var(--muted) }
+.trio.done .pick { cursor: default }
+.trio.done .pick.right .paper { outline-color: var(--accent) }
+.trio.done .pick.wrong .paper { outline-color: var(--gold) }
+.trio.done .pick.kin .paper { opacity: .78 }
+.verdict { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 20px; display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 24px; align-items: center }
+.verdict h3 { font: 400 28px/1.1 var(--display); margin: 0 0 8px }
+.verdict p { margin: 0 0 10px; color: var(--muted) }
+.verdict .src { font: 11px var(--mono); color: var(--muted) }
+.clad text { font: 12px var(--body); fill: var(--ink) }
+.clad path { stroke: var(--muted); stroke-width: 1.5; fill: none }
+.clad .hot { stroke: var(--accent); stroke-width: 2.5 }
+.btn { background: var(--accent); color: var(--bg); border: 0; border-radius: 999px; padding: 10px 18px; font-weight: 600; cursor: pointer }
+.btn.ghost { background: none; color: var(--accent); border: 1px solid var(--rule) }
+.row { display: flex; gap: 10px; flex-wrap: wrap }
+
+footer { border-top: 1px solid var(--rule); padding-block: 28px 48px; color: var(--muted); font-size: 13px }
+footer h4 { font: 500 12px var(--mono); text-transform: uppercase; letter-spacing: .08em; margin: 0 0 8px; color: var(--ink) }
+footer .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px }
+footer p { margin: 0 0 8px; max-width: 60ch }
+
+@media (max-width: 760px) {
+  .spread { grid-template-columns: minmax(0, 1fr); gap: 28px }
+  .spread .plate { position: static; max-width: 440px; margin: 0 auto }
+  .trio { gap: 10px }
+  .pick .tx { display: none }
+  .verdict { grid-template-columns: minmax(0, 1fr) }
+  .clad { max-width: 340px }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important } .spread .plate .paper { box-shadow: var(--paper-shadow) !important } }
+</style>
+
+<div class="wrap">
+  <header class="mast">
+    <div class="eyebrow">After John Gould · <i>The Birds of Australia</i> · London, 1840–1848</div>
+    <h1>The Singing <em>Folio</em></h1>
+    <p class="lede">Twenty-seven hand-coloured plates from Gould's great folio, each paired with a field recording of the living bird. Open a plate and press play.</p>
+    <nav class="tabs" aria-label="Sections">
+      <a href="#folio" id="tab-folio">The plates</a>
+      <a href="#odd-bird-out" id="tab-odd">Odd Bird Out</a>
+    </nav>
+  </header>
+  <main id="view"></main>
+  <footer>
+    <div class="cols">
+      <div><h4>Plates</h4><p>John Gould, <i>The Birds of Australia</i> (7 vols, 1840–48), lithographs drawn by Elizabeth Gould and H. C. Richter. Scans from rawpixel's facsimile via Wikimedia Commons, CC BY-SA 4.0. Each bird's page links to its file.</p></div>
+      <div><h4>Recordings</h4><p>From iNaturalist observers, research-grade observations only. Each recording is credited with its own licence on its bird's page.</p></div>
+      <div><h4>Maps and kinship</h4><p>Occurrence maps: GBIF.org density tiles, basemap from GBIF and OpenMapTiles, © OpenStreetMap contributors. Odd Bird Out answers: the Open Tree of Life synthetic tree; orders and families from the GBIF Backbone Taxonomy.</p></div>
+      <div><h4>About</h4><p>A personal, non-commercial prototype. Gould's names were matched to modern species by the compiler; GBIF does not list most of his 1840s names, so these matches are not independently checked.</p></div>
+    </div>
+  </footer>
+</div>
+<audio id="player" preload="none"></audio>
+
+<script>
+const BIRDS = /*BIRDS*/[];
+const ROUNDS = /*ROUNDS*/[];
+const byPlate = Object.fromEntries(BIRDS.map(b => [b.plate, b]));
+const byLatin = Object.fromEntries(BIRDS.map(b => [b.latin, b]));
+const view = document.getElementById('view');
+const player = document.getElementById('player');
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const num = i => String(i + 1).padStart(2, '0');
+const LIC = { 'cc0': 'CC0', 'cc-by': 'CC BY', 'cc-by-nc': 'CC BY-NC', 'cc-by-sa': 'CC BY-SA', 'cc-by-nc-sa': 'CC BY-NC-SA' };
+const PLAY = '<svg viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5z"/></svg>';
+const STOP = '<svg viewBox="0 0 24 24"><path d="M6 5h4.5v14H6zM13.5 5H18v14h-4.5z"/></svg>';
+
+/* ---------- audio + live spectrogram ---------- */
+let actx, analyser, srcNode, raf, playingBtn = null;
+function ensureAudio() {
+  if (actx) return;
+  actx = new (window.AudioContext || window.webkitAudioContext)();
+  analyser = actx.createAnalyser(); analyser.fftSize = 1024; analyser.smoothingTimeConstant = 0.2;
+  srcNode = actx.createMediaElementSource(player);
+  srcNode.connect(analyser); analyser.connect(actx.destination);
+}
+function stopAudio() {
+  player.pause(); cancelAnimationFrame(raf);
+  if (playingBtn) { playingBtn.innerHTML = PLAY; playingBtn.setAttribute('aria-label', 'Play recording'); }
+  playingBtn = null;
+  document.querySelectorAll('.plate .paper').forEach(p => p.style.setProperty('--amp', 0));
+}
+player.addEventListener('ended', stopAudio);
+function toggle(btn, bird, canvas, paper) {
+  if (playingBtn === btn) { stopAudio(); return; }
+  stopAudio(); ensureAudio(); actx.resume();
+  player.src = bird.sound.file; player.currentTime = 0;
+  player.play().catch(() => stopAudio());
+  playingBtn = btn; btn.innerHTML = STOP; btn.setAttribute('aria-label', 'Stop recording');
+  if (canvas) draw(canvas, paper);
+}
+function draw(canvas, paper) {
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio || 1;
+  canvas.width = canvas.clientWidth * dpr; canvas.height = canvas.clientHeight * dpr;
+  const cs = getComputedStyle(document.documentElement);
+  const bg = cs.getPropertyValue('--bg').trim(), ac = cs.getPropertyValue('--accent').trim(), gd = cs.getPropertyValue('--gold').trim();
+  ctx.fillStyle = bg; ctx.fillRect(0, 0, canvas.width, canvas.height);
+  const bins = analyser.frequencyBinCount, freq = new Uint8Array(bins), wave = new Uint8Array(analyser.fftSize);
+  const nyq = actx.sampleRate / 2, maxHz = 11000, useBins = Math.floor(bins * maxHz / nyq);
+  const pxPerSec = 70 * dpr;            // time-based scroll, so slow frame rates still draw a continuous trace
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let last = performance.now(), carry = 0, peak = 40; const noise = new Float32Array(bins).fill(-1);
+  (function frame(now = performance.now()) {
+    carry += (now - last) / 1000 * pxPerSec; last = now;
+    const col = Math.floor(carry); carry -= col;
+    if (col > 0) {
+      analyser.getByteFrequencyData(freq);
+      // subtract each band's slow-moving noise floor (wind, hum, distant traffic) so the song stands out
+      const k = Math.min(1, col / pxPerSec);            // adapt over roughly two seconds
+      let fmax = 0;
+      for (let i = 0; i < useBins; i++) {
+        if (noise[i] < 0) noise[i] = freq[i];
+        noise[i] += (freq[i] - noise[i]) * (freq[i] > noise[i] ? 0.25 * k : 1.2 * k);
+        const e = freq[i] - noise[i]; freq[i] = e > 0 ? e : 0; if (freq[i] > fmax) fmax = freq[i];
+      }
+      peak = Math.max(peak * 0.985, fmax, 25);          // automatic gain: quiet recordings still show
+      const w = Math.min(col, canvas.width);
+      ctx.drawImage(canvas, w, 0, canvas.width - w, canvas.height, 0, 0, canvas.width - w, canvas.height);
+      ctx.fillStyle = bg; ctx.fillRect(canvas.width - w, 0, w, canvas.height);
+      const h = canvas.height, bh = Math.max(1, Math.ceil(h / useBins));
+      for (let i = 0; i < useBins; i++) {
+        const v = freq[i] / peak; if (v < 0.3) continue;
+        ctx.globalAlpha = Math.min(1, (v - 0.3) * 1.8);
+        ctx.fillStyle = v > 0.8 ? gd : ac;
+        ctx.fillRect(canvas.width - w, h - (i + 1) / useBins * h, w, bh);
+      }
+      ctx.globalAlpha = 1;
+    }
+    if (paper && !reduce) {
+      analyser.getByteTimeDomainData(wave); let s = 0;
+      for (const x of wave) { const d = (x - 128) / 128; s += d * d; }
+      paper.style.setProperty('--amp', Math.min(1, Math.sqrt(Math.sqrt(s / wave.length)) * 2.2).toFixed(3));
+    }
+    raf = requestAnimationFrame(frame);
+  })();
+}
+
+/* ---------- views ---------- */
+function mapView(b) {   // crop the 1024x512 world masks to where this bird occurs
+  const [x, y, w] = b.mapView || [0, 0, 1024], h = w / 2;
+  const size = `${1024 / w * 100}% ${512 / h * 100}%`;
+  const pos = `${w >= 1024 ? 0 : x / (1024 - w) * 100}% ${h >= 512 ? 0 : y / (512 - h) * 100}%`;
+  return `--msize:${size};--mpos:${pos}`;
+}
+function setTab(id) {
+  for (const t of ['tab-folio', 'tab-odd']) document.getElementById(t).toggleAttribute('aria-current', false);
+  if (id) document.getElementById(id).setAttribute('aria-current', 'page');
+}
+function folio() {
+  setTab('tab-folio');
+  view.innerHTML = `<div class="grid">${BIRDS.map((b, i) => `
+    <a class="tile" href="#b-${b.plate}">
+      <div class="paper"><img loading="lazy" src="${b.thumb}" alt="Gould's plate of the ${esc(b.common)}"></div>
+      <div class="no">NO. ${num(i)}${b.sound ? '' : ' · <span class="mute">SILENT</span>'}</div>
+      <div class="nm">${esc(b.common)}</div>
+      <div class="gd">${esc(b.gould_common)}</div>
+    </a>`).join('')}</div>`;
+}
+function spread(plate) {
+  const i = BIRDS.findIndex(b => b.plate === plate); if (i < 0) return folio();
+  const b = BIRDS[i], prev = BIRDS[(i - 1 + BIRDS.length) % BIRDS.length], next = BIRDS[(i + 1) % BIRDS.length];
+  setTab(null);
+  const s = b.sound;
+  view.innerHTML = `<article class="spread">
+    <figure class="plate" style="margin:0">
+      <div class="paper"><img src="${b.img.file}" alt="Hand-coloured lithograph of the ${esc(b.common)} from Gould's Birds of Australia"></div>
+      <figcaption class="legend"><b>${esc(b.gould_common)}</b>${esc(b.gould_latin)}, as Gould named it</figcaption>
+    </figure>
+    <div class="page">
+      <div class="crumbs"><a href="#folio">← All plates</a>
+        <div class="pager"><button id="pv" aria-label="Previous plate: ${esc(prev.common)}">‹</button><button id="nx" aria-label="Next plate: ${esc(next.common)}">›</button></div></div>
+      <div>
+        <div class="eyebrow">No. ${num(i)} of ${BIRDS.length}</div>
+        <h2>${esc(b.common)}</h2>
+        <div class="latin">${esc(b.latin)}</div>
+        <div class="taxo">ORDER ${esc(b.order).toUpperCase()} · FAMILY ${esc(b.family).toUpperCase()}</div>
+      </div>
+      <section class="voice" aria-label="Recording">
+        <div class="voice-head">
+          <button class="play" id="play" ${s ? '' : 'disabled'} aria-label="Play recording">${PLAY}</button>
+          <div><div class="voice-title">${s ? 'Hear it' : 'No open recording yet'}</div>
+          <div class="voice-sub">${s ? esc(s.place || 'Location withheld') + (s.date ? ' · ' + esc(s.date) : '') : 'iNaturalist has no openly licensed, research-grade recording of this bird.'}</div></div>
+        </div>
+        <canvas class="spec" id="spec" aria-hidden="true"></canvas>
+        <div class="axis"><span>live spectrogram · pitch rises upward</span><span>0–11 kHz</span></div>
+        ${s ? `<div class="credit">${esc(s.attribution)} ·<a href="${s.obs}" target="_blank" rel="noopener">iNaturalist observation ↗</a></div>` : ''}
+      </section>
+      <section class="mapbox">
+        <h3>Where it has been recorded</h3>
+        <div class="map" style="${mapView(b)}"><div class="land"></div><div class="dots" style="-webkit-mask-image:url(${b.map});mask-image:url(${b.map})"></div></div>
+        <div class="mapcap">${b.records ? b.records.toLocaleString('en-AU') + ' GBIF occurrence records · ' : ''}<a href="https://www.gbif.org/species/${b.gbif}" target="_blank" rel="noopener">GBIF ↗</a> · <a href="${b.img.source}" target="_blank" rel="noopener">Plate on Commons ↗</a></div>
+      </section>
+    </div>
+  </article>`;
+  document.getElementById('pv').onclick = () => location.hash = 'b-' + prev.plate;
+  document.getElementById('nx').onclick = () => location.hash = 'b-' + next.plate;
+  const canvas = document.getElementById('spec');
+  const c = canvas.getContext('2d'); canvas.width = canvas.clientWidth; canvas.height = canvas.clientHeight;
+  c.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--bg'); c.fillRect(0, 0, canvas.width, canvas.height);
+  if (s) document.getElementById('play').onclick = e => toggle(e.currentTarget, b, canvas, view.querySelector('.plate .paper'));
+  window.scrollTo({ top: view.offsetTop - 12, behavior: 'instant' });
+}
+
+/* ---------- Odd Bird Out ---------- */
+let game = null;
+function shuffle(a) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+function newGame() { game = { order: shuffle(ROUNDS).map(r => ({ ...r, birds: shuffle(r.birds) })), i: 0, score: 0, answered: false }; }
+function cladogram(r) {
+  const [a, b] = r.pair.map(l => byLatin[l].common), o = byLatin[r.odd].common;
+  return `<svg class="clad" viewBox="0 0 300 120" role="img" aria-label="${esc(a)} and ${esc(b)} share a branch; ${esc(o)} split off earlier">
+    <path d="M6 60 H26 M26 30 V100 M26 100 H112 M26 30 H58 M58 14 V46 M58 14 H112 M58 46 H112" />
+    <path class="hot" d="M58 14 V46 M58 14 H112 M58 46 H112" />
+    <text x="118" y="18">${esc(a)}</text><text x="118" y="50">${esc(b)}</text><text x="118" y="104">${esc(o)}</text>
+  </svg>`;
+}
+function odd() {
+  setTab('tab-odd'); if (!game) newGame();
+  if (game.i >= game.order.length) {
+    view.innerHTML = `<section class="game"><div class="game-head"><h2>You scored ${game.score} of ${game.order.length}.</h2></div>
+      <p class="lede">Looks mislead because birds that live alike come to look alike. Kinship follows the family tree, which is now built mostly from DNA.</p>
+      <div class="row"><button class="btn" id="again">Play again</button><a class="btn ghost" href="#folio" style="text-decoration:none">Browse the plates</a></div></section>`;
+    document.getElementById('again').onclick = () => { newGame(); odd(); };
+    return;
+  }
+  const r = game.order[game.i];
+  view.innerHTML = `<section class="game">
+    <div class="game-head"><h2>Which bird is the odd one out?</h2><div class="score">ROUND ${game.i + 1}/${game.order.length} · SCORE ${game.score}</div></div>
+    <p class="lede" style="margin-top:-10px">Two of these birds are more closely related to each other than either is to the third. Pick the outsider.</p>
+    <div class="trio" id="trio">${r.birds.map(l => { const b = byLatin[l]; return `
+      <button class="pick" data-l="${esc(l)}">
+        <div class="paper"><img src="${b.thumb}" alt="Gould's plate of the ${esc(b.common)}"></div>
+        <div class="nm">${esc(b.common)}</div><div class="tx">${esc(b.order)}</div>
+      </button>`; }).join('')}</div>
+    <div id="verdict"></div></section>`;
+  view.querySelectorAll('.pick').forEach(btn => btn.onclick = () => answer(r, btn.dataset.l));
+}
+function answer(r, chosen) {
+  if (game.answered) return; game.answered = true;
+  const ok = chosen === r.odd; if (ok) game.score++;
+  const trio = document.getElementById('trio'); trio.classList.add('done');
+  trio.querySelectorAll('.pick').forEach(p => { p.disabled = true;
+    p.classList.add(p.dataset.l === r.odd ? 'right' : (p.dataset.l === chosen ? 'wrong' : 'kin')); });
+  const [A, B] = r.pair.map(l => byLatin[l]), O = byLatin[r.odd];
+  let why;
+  if (A.family === B.family) why = `${A.common} and ${B.common} are in the same family, ${A.family}. The ${O.common} is in ${O.family}.`;
+  else if (A.order === B.order) why = `${A.common} and ${B.common} are both ${A.order}, in different families. The ${O.common} belongs to ${O.order}.`;
+  else why = `${A.common} (${A.order}) and ${B.common} (${B.order}) are in different orders, yet the tree puts them on a shared branch that excludes the ${O.common} (${O.order}).`;
+  document.getElementById('verdict').innerHTML = `<div class="verdict">
+    <div><h3>${ok ? 'Right.' : 'Not this time.'} The ${esc(O.common)} is the outsider.</h3>
+      <p>${esc(why)}</p>
+      <div class="src">Source: Open Tree of Life synthetic tree; orders and families from GBIF.</div>
+      <div class="row" style="margin-top:14px"><button class="btn" id="next">${game.i + 1 < game.order.length ? 'Next round' : 'See your score'}</button>
+      <a class="btn ghost" href="#b-${O.plate}" style="text-decoration:none">Open the ${esc(O.common)}</a></div></div>
+    ${cladogram(r)}</div>`;
+  document.getElementById('next').onclick = () => { game.i++; game.answered = false; odd(); window.scrollTo({ top: view.offsetTop - 12, behavior: 'instant' }); };
+}
+
+/* ---------- routing ---------- */
+function route() {
+  stopAudio();
+  const h = location.hash.slice(1);
+  if (h.startsWith('b-')) spread(+h.slice(2));
+  else if (h === 'odd-bird-out') odd();
+  else folio();
+}
+addEventListener('hashchange', route);
+addEventListener('keydown', e => {
+  if (!location.hash.startsWith('#b-') || e.target.closest('input,textarea')) return;
+  if (e.key === 'ArrowLeft') document.getElementById('pv')?.click();
+  if (e.key === 'ArrowRight') document.getElementById('nx')?.click();
+  if (e.key === 'Escape') location.hash = 'folio';
+});
+route();
+</script>

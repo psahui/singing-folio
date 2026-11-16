@@ -1,0 +1,697 @@
+[
+ {
+  "plate": 1,
+  "gould_common": "Wedge-tailed Eagle",
+  "gould_latin": "Aquila audax",
+  "common": "Wedge-tailed Eagle",
+  "latin": "Aquila audax",
+  "gbif": 5229181,
+  "order": "Accipitriformes",
+  "family": "Accipitridae",
+  "inat": 5080,
+  "inat_sounds": 18,
+  "gould_resolves": "Aquila audax",
+  "img": {
+   "file": "assets/plates/1.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bird_illustration_by_Elizabeth_Gould_for_Birds_of_Australia,_digitally_enhanced_from_rawpixel's_own_facsimile_book1.jpg"
+  },
+  "map": "assets/maps/1.png",
+  "sound": {
+   "file": "assets/audio/1.mp3",
+   "attribution": "(c) James Peake, some rights reserved (CC BY-NC)",
+   "license": "cc-by-nc",
+   "obs": "https://www.inaturalist.org/observations/259333363",
+   "place": "Mount Buller Alpine Resort (Unincorporated), VIC 3723, Australia",
+   "date": "2025-01-23"
+  }
+ },
+ {
+  "plate": 8,
+  "gould_common": "Black-cheeked Falcon",
+  "gould_latin": "Falco melanogenys",
+  "common": "Peregrine Falcon",
+  "latin": "Falco peregrinus",
+  "gbif": 2481047,
+  "order": "Falconiformes",
+  "family": "Falconidae",
+  "inat": 4647,
+  "inat_sounds": 501,
+  "gould_resolves": null,
+  "img": {
+   "file": "assets/plates/8.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bird_illustration_by_Elizabeth_Gould_for_Birds_of_Australia,_digitally_enhanced_from_rawpixel's_own_facsimile_book8.jpg"
+  },
+  "map": "assets/maps/8.png",
+  "sound": {
+   "file": "assets/audio/8.mp3",
+   "attribution": "(c) daradesmond, some rights reserved (CC BY-NC)",
+   "license": "cc-by-nc",
+   "obs": "https://www.inaturalist.org/observations/230600546",
+   "place": "28000 Chartres, France",
+   "date": "2024-07-18"
+  }
+ },
+ {
+  "plate": 32,
+  "gould_common": "Boobook Owl",
+  "gould_latin": "Athene boobook",
+  "common": "Southern Boobook",
+  "latin": "Ninox boobook",
+  "gbif": 2497828,
+  "order": "Strigiformes",
+  "family": "Strigidae",
+  "inat": 979816,
+  "inat_sounds": 1350,
+  "gould_resolves": null,
+  "img": {
+   "file": "assets/plates/32.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bird_illustration_by_Elizabeth_Gould_for_Birds_of_Australia,_digitally_enhanced_from_rawpixel's_own_facsimile_book32.jpg"
+  },
+  "map": "assets/maps/32.png",
+  "sound": {
+   "file": "assets/audio/32.mp3",
+   "attribution": "(c) graeme lunt, some rights reserved (CC BY)",
+   "license": "cc-by",
+   "obs": "https://www.inaturalist.org/observations/147930980",
+   "place": "Lal Lal VIC 3352, Australia",
+   "date": "2023-01-11"
+  }
+ },
+ {
+  "plate": 39,
+  "gould_common": "Tawny-shouldered Frogmouth",
+  "gould_latin": "Podargus humeralis",
+  "common": "Tawny Frogmouth",
+  "latin": "Podargus strigoides",
+  "gbif": 2497109,
+  "order": "Caprimulgiformes",
+  "family": "Podargidae",
+  "inat": 19721,
+  "inat_sounds": 272,
+  "gould_resolves": null,
+  "img": {
+   "file": "assets/plates/39.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bird_illustration_by_Elizabeth_Gould_for_Birds_of_Australia,_digitally_enhanced_from_rawpixel's_own_facsimile_book39.jpg"
+  },
+  "map": "assets/maps/39.png",
+  "sound": {
+   "file": "assets/audio/39.mp3",
+   "attribution": "(c) Hilda Jones, some rights reserved (CC BY-NC)",
+   "license": "cc-by-nc",
+   "obs": "https://www.inaturalist.org/observations/321191319",
+   "place": "Pelverata TAS 7150, Australia",
+   "date": "2025-10-16"
+  }
+ },
+ {
+  "plate": 52,
+  "gould_common": "Australian Bee-eater",
+  "gould_latin": "Merops ornatus",
+  "common": "Rainbow Bee-eater",
+  "latin": "Merops ornatus",
+  "gbif": 2475422,
+  "order": "Coraciiformes",
+  "family": "Meropidae",
+  "inat": 2238,
+  "inat_sounds": 75,
+  "gould_resolves": "Merops ornatus",
+  "img": {
+   "file": "assets/plates/52.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bird_illustration_by_Elizabeth_Gould_for_Birds_of_Australia,_digitally_enhanced_from_rawpixel's_own_facsimile_book52.jpg"
+  },
+  "map": "assets/maps/52.png",
+  "sound": {
+   "file": "assets/audio/52.mp3",
+   "attribution": "(c) deborod, some rights reserved (CC BY-NC)",
+   "license": "cc-by-nc",
+   "obs": "https://www.inaturalist.org/observations/193839987",
+   "place": "Point Hut District Pond, ACT, Australia",
+   "date": "2023-12-12"
+  }
+ },
+ {
+  "plate": 54,
+  "gould_common": "Great Brown Kingfisher",
+  "gould_latin": "Dacelo gigas",
+  "common": "Laughing Kookaburra",
+  "latin": "Dacelo novaeguineae",
+  "gbif": 2475648,
+  "order": "Coraciiformes",
+  "family": "Alcedinidae",
+  "inat": 2413,
+  "inat_sounds": 1075,
+  "gould_resolves": "Dacelo novaeguineae",
+  "img": {
+   "file": "assets/plates/54.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bird_illustration_by_Elizabeth_Gould_for_Birds_of_Australia,_digitally_enhanced_from_rawpixel's_own_facsimile_book54.jpg"
+  },
+  "map": "assets/maps/54.png",
+  "sound": {
+   "file": "assets/audio/54.mp3",
+   "attribution": "(c) Jenny Saito, some rights reserved (CC BY-NC)",
+   "license": "cc-by-nc",
+   "obs": "https://www.inaturalist.org/observations/145042209",
+   "place": "QUT X Block, Brisbane City QLD 4000, Australia",
+   "date": "2022-12-25"
+  }
+ },
+ {
+  "plate": 83,
+  "gould_common": "White-backed Crow-Shrike",
+  "gould_latin": "Gymnorhina leuconota",
+  "common": "Australian Magpie",
+  "latin": "Gymnorhina tibicen",
+  "gbif": 2489450,
+  "order": "Passeriformes",
+  "family": "Cracticidae",
+  "inat": 8575,
+  "inat_sounds": 1127,
+  "gould_resolves": null,
+  "img": {
+   "file": "assets/plates/83.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bird_illustration_by_Elizabeth_Gould_for_Birds_of_Australia,_digitally_enhanced_from_rawpixel's_own_facsimile_book83.jpg"
+  },
+  "map": "assets/maps/83.png",
+  "sound": {
+   "file": "assets/audio/83.mp3",
+   "attribution": "(c) deborod, some rights reserved (CC BY-NC)",
+   "license": "cc-by-nc",
+   "obs": "https://www.inaturalist.org/observations/200509013",
+   "place": "Lake Tuggeranong, Village Creek, ACT, Australia",
+   "date": "2024-02-26"
+  }
+ },
+ {
+  "plate": 85,
+  "gould_common": "Black-throated Crow-Shrike",
+  "gould_latin": "Cracticus nigrogularis",
+  "common": "Pied Butcherbird",
+  "latin": "Cracticus nigrogularis",
+  "gbif": 2489439,
+  "order": "Passeriformes",
+  "family": "Cracticidae",
+  "inat": 8493,
+  "inat_sounds": 260,
+  "gould_resolves": "Cracticus nigrogularis",
+  "img": {
+   "file": "assets/plates/85.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bird_illustration_by_Elizabeth_Gould_for_Birds_of_Australia,_digitally_enhanced_from_rawpixel's_own_facsimile_book85.jpg"
+  },
+  "map": "assets/maps/85.png",
+  "sound": {
+   "file": "assets/audio/85.mp3",
+   "attribution": "(c) Lise Kool, some rights reserved (CC BY-NC)",
+   "license": "cc-by-nc",
+   "obs": "https://www.inaturalist.org/observations/204233523",
+   "place": "Torrington NSW Australia",
+   "date": "2024-03-28"
+  }
+ },
+ {
+  "plate": 88,
+  "gould_common": "Butcher-Bird",
+  "gould_latin": "Cracticus destructor",
+  "common": "Grey Butcherbird",
+  "latin": "Cracticus torquatus",
+  "gbif": 2489440,
+  "order": "Passeriformes",
+  "family": "Cracticidae",
+  "inat": 204497,
+  "inat_sounds": 644,
+  "gould_resolves": null,
+  "img": {
+   "file": "assets/plates/88.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bird_illustration_by_Elizabeth_Gould_for_Birds_of_Australia,_digitally_enhanced_from_rawpixel's_own_facsimile_book88.jpg"
+  },
+  "map": "assets/maps/88.png",
+  "sound": {
+   "file": "assets/audio/88.mp3",
+   "attribution": "(c) kalimata, some rights reserved (CC BY-NC)",
+   "license": "cc-by-nc",
+   "obs": "https://www.inaturalist.org/observations/210648678",
+   "place": "Sydney NSW, Australia",
+   "date": "2024-04-28"
+  }
+ },
+ {
+  "plate": 154,
+  "gould_common": "Lyre Bird",
+  "gould_latin": "Menura superba",
+  "common": "Superb Lyrebird",
+  "latin": "Menura novaehollandiae",
+  "gbif": 2488980,
+  "order": "Passeriformes",
+  "family": "Menuridae",
+  "inat": 12700,
+  "inat_sounds": 867,
+  "gould_resolves": null,
+  "img": {
+   "file": "assets/plates/154.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bird_illustration_by_Elizabeth_Gould_for_Birds_of_Australia,_digitally_enhanced_from_rawpixel's_own_facsimile_book154.jpg"
+  },
+  "map": "assets/maps/154.png",
+  "sound": {
+   "file": "assets/audio/154.mp3",
+   "attribution": "(c) Reiner Richter, some rights reserved (CC BY-NC)",
+   "license": "cc-by-nc",
+   "obs": "https://www.inaturalist.org/observations/85077053",
+   "place": "Cathedral Range Park, Taggerty VIC AU",
+   "date": "2021-06-30"
+  }
+ },
+ {
+  "plate": 155,
+  "gould_common": "Coach-whip Bird",
+  "gould_latin": "Psophodes crepitans",
+  "common": "Eastern Whipbird",
+  "latin": "Psophodes olivaceus",
+  "gbif": 2495057,
+  "order": "Passeriformes",
+  "family": "Psophodidae",
+  "inat": 117077,
+  "inat_sounds": 985,
+  "gould_resolves": null,
+  "img": {
+   "file": "assets/plates/155.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bird_illustration_by_Elizabeth_Gould_for_Birds_of_Australia,_digitally_enhanced_from_rawpixel's_own_facsimile_book155.jpg"
+  },
+  "map": "assets/maps/155.png",
+  "sound": {
+   "file": "assets/audio/155.mp3",
+   "attribution": "(c) P+B, some rights reserved (CC BY-NC)",
+   "license": "cc-by-nc",
+   "obs": "https://www.inaturalist.org/observations/78691203",
+   "place": "Sydney NSW, Australia",
+   "date": "2021-05-12"
+  }
+ },
+ {
+  "plate": 158,
+  "gould_common": "Blue Wren",
+  "gould_latin": "Malurus cyaneus",
+  "common": "Superb Fairywren",
+  "latin": "Malurus cyaneus",
+  "gbif": 2487516,
+  "order": "Passeriformes",
+  "family": "Maluridae",
+  "inat": 12065,
+  "inat_sounds": 446,
+  "gould_resolves": "Malurus cyaneus",
+  "img": {
+   "file": "assets/plates/158.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bird_illustration_by_Elizabeth_Gould_for_Birds_of_Australia,_digitally_enhanced_from_rawpixel's_own_facsimile_book158.jpg"
+  },
+  "map": "assets/maps/158.png",
+  "sound": {
+   "file": "assets/audio/158.mp3",
+   "attribution": "(c) Hilda Jones, some rights reserved (CC BY-NC)",
+   "license": "cc-by-nc",
+   "obs": "https://www.inaturalist.org/observations/405417934",
+   "place": "Pelverata TAS 7150, Australia",
+   "date": "2026-09-29"
+  }
+ },
+ {
+  "plate": 247,
+  "gould_common": "Satin Bower Bird",
+  "gould_latin": "Ptilonorhynchus holosericeus",
+  "common": "Satin Bowerbird",
+  "latin": "Ptilonorhynchus violaceus",
+  "gbif": 5231665,
+  "order": "Passeriformes",
+  "family": "Ptilonorhynchidae",
+  "inat": 14539,
+  "inat_sounds": 219,
+  "gould_resolves": "Ptilonorhynchus holosericeus",
+  "img": {
+   "file": "assets/plates/247.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bird_illustration_by_Elizabeth_Gould_for_Birds_of_Australia,_digitally_enhanced_from_rawpixel's_own_facsimile_book247.jpg"
+  },
+  "map": "assets/maps/247.png",
+  "sound": {
+   "file": "assets/audio/247.mp3",
+   "attribution": "(c) Bradley W. Jones, some rights reserved (CC BY-NC)",
+   "license": "cc-by-nc",
+   "obs": "https://www.inaturalist.org/observations/190299403",
+   "place": "Murrurundi NSW 2338, Australia",
+   "date": "2023-10-31"
+  }
+ },
+ {
+  "plate": 249,
+  "gould_common": "Regent Bird",
+  "gould_latin": "Sericulus chrysocephalus",
+  "common": "Regent Bowerbird",
+  "latin": "Sericulus chrysocephalus",
+  "gbif": 2494814,
+  "order": "Passeriformes",
+  "family": "Ptilonorhynchidae",
+  "inat": 14547,
+  "inat_sounds": 5,
+  "gould_resolves": "Sericulus chrysocephalus",
+  "img": {
+   "file": "assets/plates/249.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bird_illustration_by_Elizabeth_Gould_for_Birds_of_Australia,_digitally_enhanced_from_rawpixel's_own_facsimile_book249.jpg"
+  },
+  "map": "assets/maps/249.png",
+  "sound": {
+   "file": "assets/audio/249.mp3",
+   "attribution": "(c) Lucas Lennon, some rights reserved (CC BY-NC)",
+   "license": "cc-by-nc",
+   "obs": "https://www.inaturalist.org/observations/308675593",
+   "place": "O'Reilly QLD 4275, Australia",
+   "date": "2025-08-05"
+  }
+ },
+ {
+  "plate": 313,
+  "gould_common": "Garrulous Honey-eater",
+  "gould_latin": "Myzantha garrula",
+  "common": "Noisy Miner",
+  "latin": "Manorina melanocephala",
+  "gbif": 2487365,
+  "order": "Passeriformes",
+  "family": "Meliphagidae",
+  "inat": 12231,
+  "inat_sounds": 690,
+  "gould_resolves": null,
+  "img": {
+   "file": "assets/plates/313.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bird_illustration_by_Elizabeth_Gould_for_Birds_of_Australia,_digitally_enhanced_from_rawpixel's_own_facsimile_book313.jpg"
+  },
+  "map": "assets/maps/313.png",
+  "sound": {
+   "file": "assets/audio/313.mp3",
+   "attribution": "(c) Sandy, some rights reserved (CC BY-NC)",
+   "license": "cc-by-nc",
+   "obs": "https://www.inaturalist.org/observations/93563952",
+   "place": "Central Coast NSW, Australia",
+   "date": "2021-09-01"
+  }
+ },
+ {
+  "plate": 317,
+  "gould_common": "Australian Bell Bird",
+  "gould_latin": "Myzantha melanophrys",
+  "common": "Bell Miner",
+  "latin": "Manorina melanophrys",
+  "gbif": 2487364,
+  "order": "Passeriformes",
+  "family": "Meliphagidae",
+  "inat": 12230,
+  "inat_sounds": 511,
+  "gould_resolves": null,
+  "img": {
+   "file": "assets/plates/317.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bird_illustration_by_Elizabeth_Gould_for_Birds_of_Australia,_digitally_enhanced_from_rawpixel's_own_facsimile_book317.jpg"
+  },
+  "map": "assets/maps/317.png",
+  "sound": {
+   "file": "assets/audio/317.mp3",
+   "attribution": "(c) Sid Miller, some rights reserved (CC BY-NC)",
+   "license": "cc-by-nc",
+   "obs": "https://www.inaturalist.org/observations/333511807",
+   "place": "Trin Warren Tam-Boore Bellbird Waterhole, Parkville VIC 3052",
+   "date": "2025-12-31"
+  }
+ },
+ {
+  "plate": 342,
+  "gould_common": "Crested Cockatoo",
+  "gould_latin": "Cacatua galerita",
+  "common": "Sulphur-crested Cockatoo",
+  "latin": "Cacatua galerita",
+  "gbif": 2479888,
+  "order": "Psittaciformes",
+  "family": "Psittacidae",
+  "inat": 116834,
+  "inat_sounds": 678,
+  "gould_resolves": "Cacatua galerita",
+  "img": {
+   "file": "assets/plates/342.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bird_illustration_by_Elizabeth_Gould_for_Birds_of_Australia,_digitally_enhanced_from_rawpixel's_own_facsimile_book342.jpg"
+  },
+  "map": "assets/maps/342.png",
+  "sound": {
+   "file": "assets/audio/342.mp3",
+   "attribution": "(c) deborod, some rights reserved (CC BY-NC)",
+   "license": "cc-by-nc",
+   "obs": "https://www.inaturalist.org/observations/111194552",
+   "place": "Wanniassa, Tuggeranong, ACT, Australia",
+   "date": "2022-04-12"
+  }
+ },
+ {
+  "plate": 355,
+  "gould_common": "Gang-gang Cockatoo",
+  "gould_latin": "Callocephalon galeatum",
+  "common": "Gang-gang Cockatoo",
+  "latin": "Callocephalon fimbriatum",
+  "gbif": 2480030,
+  "order": "Psittaciformes",
+  "family": "Psittacidae",
+  "inat": 116842,
+  "inat_sounds": 393,
+  "gould_resolves": null,
+  "img": {
+   "file": "assets/plates/355.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bird_illustration_by_Elizabeth_Gould_for_Birds_of_Australia,_digitally_enhanced_from_rawpixel's_own_facsimile_book355.jpg"
+  },
+  "map": "assets/maps/355.png",
+  "sound": {
+   "file": "assets/audio/355.mp4",
+   "attribution": "(c) Mel Pearce, some rights reserved (CC BY-NC)",
+   "license": "cc-by-nc",
+   "obs": "https://www.inaturalist.org/observations/345038599",
+   "place": "New South Wales, AU",
+   "date": "2026-03-25"
+  }
+ },
+ {
+  "plate": 368,
+  "gould_common": "Rose-hill Parakeet",
+  "gould_latin": "Platycercus eximius",
+  "common": "Eastern Rosella",
+  "latin": "Platycercus eximius",
+  "gbif": 2479329,
+  "order": "Psittaciformes",
+  "family": "Psittacidae",
+  "inat": 18920,
+  "inat_sounds": 203,
+  "gould_resolves": "Platycercus eximius",
+  "img": {
+   "file": "assets/plates/368.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bird_illustration_by_Elizabeth_Gould_for_Birds_of_Australia,_digitally_enhanced_from_rawpixel's_own_facsimile_book368.jpg"
+  },
+  "map": "assets/maps/368.png",
+  "sound": {
+   "file": "assets/audio/368.mp3",
+   "attribution": "(c) A Emmerson, some rights reserved (CC BY-NC)",
+   "license": "cc-by-nc",
+   "obs": "https://www.inaturalist.org/observations/261469448",
+   "place": "Hobart TAS, Australia",
+   "date": "2024-11-23"
+  }
+ },
+ {
+  "plate": 385,
+  "gould_common": "Warbling Grass-Parakeet",
+  "gould_latin": "Melopsittacus undulatus",
+  "common": "Budgerigar",
+  "latin": "Melopsittacus undulatus",
+  "gbif": 2479798,
+  "order": "Psittaciformes",
+  "family": "Psittacidae",
+  "inat": 19339,
+  "inat_sounds": 17,
+  "gould_resolves": "Melopsittacus undulatus",
+  "img": {
+   "file": "assets/plates/385.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bird_illustration_by_Elizabeth_Gould_for_Birds_of_Australia,_digitally_enhanced_from_rawpixel's_own_facsimile_book385.jpg"
+  },
+  "map": "assets/maps/385.png",
+  "sound": {
+   "file": "assets/audio/385.mp3",
+   "attribution": "(c) Matthew Connors, some rights reserved (CC BY-NC)",
+   "license": "cc-by-nc",
+   "obs": "https://www.inaturalist.org/observations/413546103",
+   "place": "Ediacara SA 5733, Australia",
+   "date": "2026-09-11"
+  }
+ },
+ {
+  "plate": 442,
+  "gould_common": "Wattled Pewit",
+  "gould_latin": "Lobivanellus lobatus",
+  "common": "Masked Lapwing",
+  "latin": "Vanellus miles",
+  "gbif": 5229134,
+  "order": "Charadriiformes",
+  "family": "Charadriidae",
+  "inat": 4872,
+  "inat_sounds": 392,
+  "gould_resolves": "Phalaropus lobatus",
+  "img": {
+   "file": "assets/plates/442.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bird_illustration_by_Elizabeth_Gould_for_Birds_of_Australia,_digitally_enhanced_from_rawpixel's_own_facsimile_book442.jpg"
+  },
+  "map": "assets/maps/442.png",
+  "sound": {
+   "file": "assets/audio/442.mp3",
+   "attribution": "(c) Anthony Wilson, some rights reserved (CC BY-NC)",
+   "license": "cc-by-nc",
+   "obs": "https://www.inaturalist.org/observations/197261075",
+   "place": "Victoria, AU",
+   "date": "2024-01-21"
+  }
+ },
+ {
+  "plate": 462,
+  "gould_common": "Barred-rumped Godwit",
+  "gould_latin": "Limosa uropygialis",
+  "common": "Bar-tailed Godwit",
+  "latin": "Limosa lapponica",
+  "gbif": 2481681,
+  "order": "Charadriiformes",
+  "family": "Scolopacidae",
+  "inat": 3951,
+  "inat_sounds": 11,
+  "gould_resolves": null,
+  "img": {
+   "file": "assets/plates/462.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bird_illustration_by_Elizabeth_Gould_for_Birds_of_Australia,_digitally_enhanced_from_rawpixel's_own_facsimile_book462.jpg"
+  },
+  "map": "assets/maps/462.png",
+  "sound": {
+   "file": "assets/audio/462.mp3",
+   "attribution": "(c) admss, some rights reserved (CC BY-NC)",
+   "license": "cc-by-nc",
+   "obs": "https://www.inaturalist.org/observations/314437923",
+   "place": "22300 Tr\u00e9drez-Locqu\u00e9meau, France",
+   "date": "2025-08-20"
+  }
+ },
+ {
+  "plate": 521,
+  "gould_common": "Black Swan",
+  "gould_latin": "Cygnus atratus",
+  "common": "Black Swan",
+  "latin": "Cygnus atratus",
+  "gbif": 2498344,
+  "order": "Anseriformes",
+  "family": "Anatidae",
+  "inat": 6914,
+  "inat_sounds": 30,
+  "gould_resolves": "Cygnus atratus",
+  "img": {
+   "file": "assets/plates/521.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bird_illustration_by_Elizabeth_Gould_for_Birds_of_Australia,_digitally_enhanced_from_rawpixel's_own_facsimile_book521.jpg"
+  },
+  "map": "assets/maps/521.png",
+  "sound": {
+   "file": "assets/audio/521.mp3",
+   "attribution": "(c) dandyrangeshiker, some rights reserved (CC BY-NC)",
+   "license": "cc-by-nc",
+   "obs": "https://www.inaturalist.org/observations/414327142",
+   "place": "Melbourne VIC, Australia",
+   "date": "2026-11-12"
+  }
+ },
+ {
+  "plate": 553,
+  "gould_common": "Wandering Albatros",
+  "gould_latin": "Diomedea exulans",
+  "common": "Wandering Albatross",
+  "latin": "Diomedea exulans",
+  "gbif": 5229302,
+  "order": "Procellariiformes",
+  "family": "Diomedeidae",
+  "inat": 4117,
+  "inat_sounds": 0,
+  "gould_resolves": "Diomedea exulans",
+  "img": {
+   "file": "assets/plates/553.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bird_illustration_by_Elizabeth_Gould_for_Birds_of_Australia,_digitally_enhanced_from_rawpixel's_own_facsimile_book553.jpg"
+  },
+  "map": "assets/maps/553.png",
+  "sound": null
+ },
+ {
+  "plate": 571,
+  "gould_common": "Short-tailed Petrel",
+  "gould_latin": "Puffinus brevicaudus",
+  "common": "Short-tailed Shearwater",
+  "latin": "Ardenna tenuirostris",
+  "gbif": 7456133,
+  "order": "Procellariiformes",
+  "family": "Procellariidae",
+  "inat": 475116,
+  "inat_sounds": 1,
+  "gould_resolves": null,
+  "img": {
+   "file": "assets/plates/571.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bird_illustration_by_Elizabeth_Gould_for_Birds_of_Australia,_digitally_enhanced_from_rawpixel's_own_facsimile_book571.jpg"
+  },
+  "map": "assets/maps/571.png",
+  "sound": {
+   "file": "assets/audio/571.mp3",
+   "attribution": "(c) Paul J. Morris, some rights reserved (CC BY-SA)",
+   "license": "cc-by-sa",
+   "obs": "https://www.inaturalist.org/observations/189746204",
+   "place": "Stanley TAS 7331, Australia",
+   "date": "2023-10-17"
+  }
+ },
+ {
+  "plate": 589,
+  "gould_common": "Australian Pelican",
+  "gould_latin": "Pelecanus conspicillatus",
+  "common": "Australian Pelican",
+  "latin": "Pelecanus conspicillatus",
+  "gbif": 5229156,
+  "order": "Pelecaniformes",
+  "family": "Pelecanidae",
+  "inat": 4326,
+  "inat_sounds": 1,
+  "gould_resolves": "Pelecanus conspicillatus",
+  "img": {
+   "file": "assets/plates/589.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bird_illustration_by_Elizabeth_Gould_for_Birds_of_Australia,_digitally_enhanced_from_rawpixel's_own_facsimile_book589.jpg"
+  },
+  "map": "assets/maps/589.png",
+  "sound": {
+   "file": "assets/audio/589.mp3",
+   "attribution": "(c) deborod, some rights reserved (CC BY-NC)",
+   "license": "cc-by-nc",
+   "obs": "https://www.inaturalist.org/observations/206043763",
+   "place": "Jerrabomberra Wetlands, ACT, Australia",
+   "date": "2024-04-08"
+  }
+ },
+ {
+  "plate": 599,
+  "gould_common": "Little Penguin",
+  "gould_latin": "Spheniscus minor",
+  "common": "Little Penguin",
+  "latin": "Eudyptula minor",
+  "gbif": 2481646,
+  "order": "Sphenisciformes",
+  "family": "Spheniscidae",
+  "inat": 3817,
+  "inat_sounds": 49,
+  "gould_resolves": null,
+  "img": {
+   "file": "assets/plates/599.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Bird_illustration_by_Elizabeth_Gould_for_Birds_of_Australia,_digitally_enhanced_from_rawpixel's_own_facsimile_book599.jpg"
+  },
+  "map": "assets/maps/599.png",
+  "sound": {
+   "file": "assets/audio/599.mp3",
+   "attribution": "(c) Jay, some rights reserved (CC BY-NC-SA)",
+   "license": "cc-by-nc-sa",
+   "obs": "https://www.inaturalist.org/observations/34574052",
+   "place": "Tasman, TAS, Australia",
+   "date": "2019-10-19"
+  }
+ }
+]

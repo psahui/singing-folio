@@ -1,0 +1,142 @@
+[
+ {
+  "birds": [
+   "Falco peregrinus",
+   "Aquila audax",
+   "Cacatua galerita"
+  ],
+  "odd": "Aquila audax",
+  "pair": [
+   "Falco peregrinus",
+   "Cacatua galerita"
+  ],
+  "pair_clade": "Neognathae",
+  "all_clade": "Neognathae"
+ },
+ {
+  "birds": [
+   "Podargus strigoides",
+   "Ninox boobook",
+   "Dacelo novaeguineae"
+  ],
+  "odd": "Podargus strigoides",
+  "pair": [
+   "Ninox boobook",
+   "Dacelo novaeguineae"
+  ],
+  "pair_clade": "Neognathae",
+  "all_clade": "Neognathae"
+ },
+ {
+  "birds": [
+   "Eudyptula minor",
+   "Diomedea exulans",
+   "Cygnus atratus"
+  ],
+  "odd": "Cygnus atratus",
+  "pair": [
+   "Eudyptula minor",
+   "Diomedea exulans"
+  ],
+  "pair_clade": "Neognathae",
+  "all_clade": null
+ },
+ {
+  "birds": [
+   "Pelecanus conspicillatus",
+   "Eudyptula minor",
+   "Vanellus miles"
+  ],
+  "odd": "Vanellus miles",
+  "pair": [
+   "Pelecanus conspicillatus",
+   "Eudyptula minor"
+  ],
+  "pair_clade": "Neognathae",
+  "all_clade": "Neognathae"
+ },
+ {
+  "birds": [
+   "Gymnorhina tibicen",
+   "Cracticus nigrogularis",
+   "Manorina melanocephala"
+  ],
+  "odd": "Manorina melanocephala",
+  "pair": [
+   "Gymnorhina tibicen",
+   "Cracticus nigrogularis"
+  ],
+  "pair_clade": "Artamidae",
+  "all_clade": "Passeriformes"
+ },
+ {
+  "birds": [
+   "Menura novaehollandiae",
+   "Ptilonorhynchus violaceus",
+   "Malurus cyaneus"
+  ],
+  "odd": "Menura novaehollandiae",
+  "pair": [
+   "Ptilonorhynchus violaceus",
+   "Malurus cyaneus"
+  ],
+  "pair_clade": "Passeriformes",
+  "all_clade": "Passeriformes"
+ },
+ {
+  "birds": [
+   "Ardenna tenuirostris",
+   "Diomedea exulans",
+   "Limosa lapponica"
+  ],
+  "odd": "Limosa lapponica",
+  "pair": [
+   "Ardenna tenuirostris",
+   "Diomedea exulans"
+  ],
+  "pair_clade": null,
+  "all_clade": "Neognathae"
+ },
+ {
+  "birds": [
+   "Merops ornatus",
+   "Dacelo novaeguineae",
+   "Melopsittacus undulatus"
+  ],
+  "odd": "Melopsittacus undulatus",
+  "pair": [
+   "Merops ornatus",
+   "Dacelo novaeguineae"
+  ],
+  "pair_clade": "Neognathae",
+  "all_clade": "Neognathae"
+ },
+ {
+  "birds": [
+   "Falco peregrinus",
+   "Melopsittacus undulatus",
+   "Ninox boobook"
+  ],
+  "odd": "Ninox boobook",
+  "pair": [
+   "Falco peregrinus",
+   "Melopsittacus undulatus"
+  ],
+  "pair_clade": "Neognathae",
+  "all_clade": "Neognathae"
+ },
+ {
+  "birds": [
+   "Cygnus atratus",
+   "Pelecanus conspicillatus",
+   "Vanellus miles"
+  ],
+  "odd": "Cygnus atratus",
+  "pair": [
+   "Pelecanus conspicillatus",
+   "Vanellus miles"
+  ],
+  "pair_clade": "Neognathae",
+  "all_clade": null
+ }
+]
